@@ -1,0 +1,16 @@
+.App {
+  margin: 50px;
+  padding: 40px;
+  border: 1px solid #b7d0fa;
+  max-width: 700px;
+  background: linear-gradient(
+    308deg,
+    rgb(229, 242, 229) 0%,
+    rgb(199, 248, 231) 24%,
+    rgb(198, 249, 244) 46%,
+    rgb(197, 227, 246) 75%,
+    rgb(219, 210, 244) 97%
+  );
+
+  box-shadow: 10px 10px 50px 10px rgba(14, 97, 240, 0.3);
+}

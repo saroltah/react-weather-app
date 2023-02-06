@@ -8,8 +8,12 @@ export default function (SearchEngine) {
         <div className="row">
           <div className="col">
             <form>
-              <input type="text" placeholder="Type a city" />
-              <input type="submit" value="Search" />
+              <input
+                type="text"
+                placeholder="Type a city"
+                className="placeholder"
+              />
+              <input type="submit" value="Search" className="submitbutton" />
             </form>
           </div>
           <div className="col">
