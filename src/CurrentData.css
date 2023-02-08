@@ -1,3 +1,28 @@
 .CurrentData {
   margin-bottom: 30px;
 }
+.CurrentData li {
+  list-style: none;
+}
+.CurrentData .cityName {
+  font-size: 20px;
+}
+.CurrentData .emoji {
+  font-size: 20px;
+}
+.CurrentData .degree {
+  font-size: 40px;
+}
+.CurrentData .description {
+  font-size: 18px;
+  color: #46507f;
+}
+.CurrentData .data {
+  padding-bottom: 15px;
+  color: #46507f;
+}
+.CurrentData .rainData,
+.CurrentData .humidData,
+.CurrentData .windData {
+  color: black;
+}

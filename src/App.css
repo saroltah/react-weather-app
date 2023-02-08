@@ -14,3 +14,10 @@
 
   box-shadow: 10px 10px 50px 10px rgba(14, 97, 240, 0.3);
 }
+.App footer {
+  color: #2b5555;
+}
+.App a {
+  color: #71aeba;
+  text-decoration: none;
+}

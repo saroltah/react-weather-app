@@ -1,6 +1,17 @@
 .SearchEngine {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
+
 .SearchEngine .placeholder {
+  background-color: white;
   border: 1px solid #b7d0fa;
+}
+.SearchEngine .submitButton {
+  background-color: #b7d0fa;
+  border: 1px solid #c7f9f0;
+  box-shadow: 10px 10px 50px 10px rgba(14, 97, 240, 0.3);
+}
+.SearchEngine .dateTime {
+  border: 1px solid white;
+  text-align: center;
 }
