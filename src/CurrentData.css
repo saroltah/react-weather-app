@@ -1,5 +1,5 @@
 .CurrentData {
-  margin-bottom: 30px;
+  margin-top: 50px;
 }
 .CurrentData li {
   list-style: none;
@@ -21,7 +21,7 @@
   padding-bottom: 15px;
   color: #46507f;
 }
-.CurrentData .rainData,
+.CurrentData .cloudData,
 .CurrentData .humidData,
 .CurrentData .windData {
   color: black;
