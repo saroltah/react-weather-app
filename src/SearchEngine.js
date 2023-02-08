@@ -8,9 +8,7 @@ export default function SearchEngine() {
   let [cityName, setCityName] = useState("City");
   let [clouds, setClouds] = useState("0");
   let [degree, setDegree] = useState("0");
-  let [icon, setIcon] = (
-    <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="weather icon" />
-  );
+  let [icon, setIcon] = "☀";
   let [description, setDescription] = useState("");
   let [wind, setWind] = useState("0");
   let [humidity, setHumidity] = useState("0");
