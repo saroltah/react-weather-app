@@ -8,7 +8,7 @@ export default function SearchEngine() {
   let [cityName, setCityName] = useState("City");
   let [clouds, setClouds] = useState("0");
   let [degree, setDegree] = useState("0");
-  let [icon, setIcon] = "☀";
+  let [icon, setIcon] = useState("http://openweathermap.org/img/wn/01n@2x.png");
   let [description, setDescription] = useState("");
   let [wind, setWind] = useState("0");
   let [humidity, setHumidity] = useState("0");
@@ -43,7 +43,7 @@ export default function SearchEngine() {
     <div className="SearchEngine">
       <div className="container">
         <div className="row">
-          <div className="col">
+          <div className="col-sm-6">
             <form onSubmit={sendCity}>
               <input
                 type="search"
@@ -54,7 +54,7 @@ export default function SearchEngine() {
               <input type="submit" value="Search" className="submitButton" />
             </form>
           </div>
-          <div className="col dateTime">
+          <div className="col-sm-6 dateTime">
             <span>Time</span>
             <br />
             <span>Date</span>

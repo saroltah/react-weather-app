@@ -9,6 +9,7 @@
 }
 .CurrentData .emoji {
   font-size: 20px;
+  margin-left: -20px;
 }
 .CurrentData .degree {
   font-size: 40px;
@@ -16,6 +17,9 @@
 .CurrentData .description {
   font-size: 18px;
   color: #46507f;
+}
+.CurrentData .details {
+  margin-top: 20px;
 }
 .CurrentData .data {
   padding-bottom: 15px;
@@ -25,4 +29,19 @@
 .CurrentData .humidData,
 .CurrentData .windData {
   color: black;
+  font-size: 18px;
+}
+@media (max-width: 575px) {
+  .CurrentData li {
+    margin-left: -20px;
+  }
+  .emoji {
+    font-size: 5px;
+    padding: 0px;
+    margin-bottom: -20px;
+  }
+  .CurrentData .degree {
+    margin-left: -20px;
+    margin-top: 15px;
+  }
 }

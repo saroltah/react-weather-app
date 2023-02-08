@@ -6,6 +6,9 @@
   background-color: white;
   border: 1px solid #b7d0fa;
 }
+.SearchEngine .placeholder:hover {
+  cursor: auto;
+}
 .SearchEngine .submitButton {
   background-color: #b7d0fa;
   border: 1px solid #c7f9f0;
@@ -14,4 +17,27 @@
 .SearchEngine .dateTime {
   border: 1px solid white;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .SearchEngine .submitButton {
+    display: block;
+    margin-top: 13px;
+    margin-left: 52px;
+  }
+}
+@media (max-width: 628px) {
+  .SearchEngine .dateTime {
+    border: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .SearchEngine .submitButton {
+    margin-bottom: 30px;
+    margin-left: 141px;
+  }
+  .basicInfo {
+    border: 1px solid white;
+    padding: 10px 10px;
+  }
 }
