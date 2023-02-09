@@ -13,7 +13,9 @@ export default function CurrentData(props) {
                 <img src={props.icon} alt="icon" />
                 <span className="degree">°{props.degree}</span>
               </li>
-              <li className="description">{props.description}</li>
+              <li className="description text-capitalize">
+                {props.description}
+              </li>
             </ul>
           </div>
           <div className="col-sm-6 details">

@@ -9,7 +9,7 @@ export default function SearchEngine() {
 
   function sendCity(event) {
     event.preventDefault();
-    let apiKey = "1fa04c70c5487af6b7c48dd7dfcb0b3f";
+    const apiKey = "1fa04c70c5487af6b7c48dd7dfcb0b3f";
     let units = "metric";
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
 
@@ -65,7 +65,6 @@ export default function SearchEngine() {
         wind={weatherData.wind}
         humidity={weatherData.humidity}
       />
-      ;
     </div>
   );
 }
