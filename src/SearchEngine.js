@@ -5,13 +5,7 @@ import axios from "axios";
 
 export default function SearchEngine() {
   let [city, setCity] = useState("");
-  let [cityName, setCityName] = useState("City");
-  let [clouds, setClouds] = useState("0");
-  let [degree, setDegree] = useState("0");
-  let [icon, setIcon] = useState("http://openweathermap.org/img/wn/01n@2x.png");
-  let [description, setDescription] = useState("");
-  let [wind, setWind] = useState("0");
-  let [humidity, setHumidity] = useState("0");
+  let [weatherData, setWeatherData] = useState({});
 
   function sendCity(event) {
     event.preventDefault();
@@ -23,15 +17,16 @@ export default function SearchEngine() {
 
     function DisplayCityData(response) {
       let weatherimage = response.data.weather[0].icon;
-      setIcon(`http://openweathermap.org/img/wn/${weatherimage}@2x.png`);
-      setDegree(Math.round(response.data.main.temp));
-      setDescription(response.data.weather[0].description);
-      setHumidity(response.data.main.humidity);
-      setWind(Math.round(response.data.wind.speed));
-      setClouds(response.data.clouds.all);
+      setWeatherData({
+        cityName: response.data.name,
+        icon: `http://openweathermap.org/img/wn/${weatherimage}@2x.png`,
+        degree: Math.round(response.data.main.temp),
+        description: response.data.weather[0].description,
+        humidity: response.data.main.humidity,
+        wind: Math.round(response.data.wind.speed),
+        clouds: response.data.clouds.all,
+      });
     }
-
-    setCityName(city);
   }
 
   function updateCity(event) {
@@ -62,13 +57,13 @@ export default function SearchEngine() {
         </div>
       </div>
       <CurrentData
-        cityName={cityName}
-        clouds={clouds}
-        degree={degree}
-        icon={icon}
-        description={description}
-        wind={wind}
-        humidity={humidity}
+        cityName={weatherData.cityName}
+        clouds={weatherData.clouds}
+        degree={weatherData.degree}
+        icon={weatherData.icon}
+        description={weatherData.description}
+        wind={weatherData.wind}
+        humidity={weatherData.humidity}
       />
       ;
     </div>
