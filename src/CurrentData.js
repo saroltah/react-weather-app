@@ -1,5 +1,6 @@
 import React from "react";
 import "./CurrentData.css";
+import ConvertDegree from "./ConvertDegree";
 
 export default function CurrentData(props) {
   return (
@@ -11,7 +12,10 @@ export default function CurrentData(props) {
               <li className="cityName">{props.cityName}</li>
               <li className="emoji">
                 <img src={props.icon} alt="icon" />
-                <span className="degree">°{props.degree}</span>
+                <span className="degree">
+                  {props.degree}
+                  <ConvertDegree />
+                </span>
               </li>
               <li className="description text-capitalize">
                 {props.description}

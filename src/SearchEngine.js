@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./SearchEngine.css";
 import CurrentData from "./CurrentData";
 import axios from "axios";
+import TimeDate from "./TimeDate";
 
 export default function SearchEngine() {
   let [city, setCity] = useState("");
@@ -25,6 +26,7 @@ export default function SearchEngine() {
         humidity: response.data.main.humidity,
         wind: Math.round(response.data.wind.speed),
         clouds: response.data.clouds.all,
+        date: response.data.dt,
       });
     }
   }
@@ -50,9 +52,7 @@ export default function SearchEngine() {
             </form>
           </div>
           <div className="col-sm-6 dateTime">
-            <span>Time</span>
-            <br />
-            <span>Date</span>
+            <TimeDate date={weatherData.date} />
           </div>
         </div>
       </div>
