@@ -1,0 +1,12 @@
+.ConvertDegree {
+  font-size: 20px;
+}
+.ConvertDegree .currentDegree {
+  font-size: 40px;
+}
+@media (max-width: 575px) {
+  .ConvertDegree .currentDegree {
+    margin-left: -20px;
+    margin-top: 15px;
+  }
+}

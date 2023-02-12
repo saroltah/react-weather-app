@@ -3,6 +3,7 @@ import "./CurrentData.css";
 import ConvertDegree from "./ConvertDegree";
 
 export default function CurrentData(props) {
+  let defaultCelsius = props.degree;
   return (
     <div className="CurrentData">
       <div className="container">
@@ -11,10 +12,9 @@ export default function CurrentData(props) {
             <ul className="basicInfo">
               <li className="cityName">{props.cityName}</li>
               <li className="emoji">
-                <img src={props.icon} alt="icon" />
+                <img src={props.icon} alt="icon" />{" "}
                 <span className="degree">
-                  {props.degree}
-                  <ConvertDegree />
+                  <ConvertDegree defaultDegree={defaultCelsius} />
                 </span>
               </li>
               <li className="description text-capitalize">

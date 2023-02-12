@@ -11,9 +11,7 @@
   font-size: 20px;
   margin-left: -20px;
 }
-.CurrentData .degree {
-  font-size: 40px;
-}
+
 .CurrentData .description {
   font-size: 18px;
   color: #46507f;
@@ -39,9 +37,5 @@
     font-size: 5px;
     padding: 0px;
     margin-bottom: -20px;
-  }
-  .CurrentData .degree {
-    margin-left: -20px;
-    margin-top: 15px;
   }
 }
