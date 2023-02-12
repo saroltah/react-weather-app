@@ -1,30 +1,45 @@
 import React, { useState } from "react";
+import { FormControl } from "react-bootstrap";
 import "./ConvertDegree.css";
 
 export default function ConvertDegree(props) {
-  const defaultDegree = props.defaultDegree;
-  let [currentDegree, setCurrentDegree] = useState(defaultDegree);
+  const celsius = props.defaultCelsius;
+  const fahrenheit = Math.round(celsius * 1.8 + 32);
+  let [unit, setUnit] = useState(celsius);
 
   function convertFahrenheit(event) {
     event.preventDefault();
-    setCurrentDegree(defaultDegree * 1.8 + 32);
+    setUnit(fahrenheit);
   }
 
   function convertCelsius(event) {
     event.preventDefault();
-    setCurrentDegree(defaultDegree);
+    setUnit(celsius);
   }
 
-  return (
-    <div className="ConvertDegree">
-      <span className="currentDegree">{currentDegree}</span>
-      <a href="/" onClick={convertCelsius}>
-        °C
-      </a>{" "}
-      /{" "}
-      <a href="/" onClick={convertFahrenheit}>
-        F
-      </a>
-    </div>
-  );
+  if (unit === null) {
+    return unit;
+  } else {
+    if (unit === celsius) {
+      return (
+        <div className="ConvertDegree">
+          <span className="currentDegree"> {unit}</span>
+          °C |{" "}
+          <a href="/" onClick={convertFahrenheit}>
+            °F
+          </a>
+        </div>
+      );
+    } else {
+      return (
+        <div className="ConvertDegree">
+          <span className="currentDegree"> {unit}</span>
+          <a href="/" onClick={convertCelsius}>
+            °C{" "}
+          </a>{" "}
+          | °F
+        </div>
+      );
+    }
+  }
 }
