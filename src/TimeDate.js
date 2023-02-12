@@ -1,4 +1,5 @@
 import React from "react";
+import "./TimeDate.css";
 
 export default function weatherData(props) {
   let currentDate = new Date(props.date * 1000);
@@ -31,6 +32,8 @@ export default function weatherData(props) {
   }
   return (
     <div>
+      <span className="updated"> Last updated: </span>
+      <br />
       {year}. {month}. {date}.
       <br />
       {day}
