@@ -5,7 +5,7 @@ import axios from "axios";
 import TimeDate from "./TimeDate";
 
 export default function Weather() {
-  let [city, setCity] = useState("");
+  let [city, setCity] = useState();
   let [weatherData, setWeatherData] = useState({});
 
   function updateCity(event) {
