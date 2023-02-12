@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { FormControl } from "react-bootstrap";
 import "./ConvertDegree.css";
 
 export default function ConvertDegree(props) {

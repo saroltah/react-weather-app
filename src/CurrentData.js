@@ -12,9 +12,9 @@ export default function CurrentData(props) {
               <li className="cityName">{props.cityName}</li>
               <li className="emoji">
                 <img src={props.icon} alt="icon" />{" "}
-                <span className="degree">
+                <div className="degree">
                   <ConvertDegree defaultCelsius={props.degree} />
-                </span>
+                </div>
               </li>
               <li className="description text-capitalize">
                 {props.description}

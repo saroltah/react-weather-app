@@ -8,6 +8,11 @@ export default function Weather() {
   let [city, setCity] = useState("");
   let [weatherData, setWeatherData] = useState({});
 
+  function updateCity(event) {
+    event.preventDefault();
+    setCity(event.target.value);
+  }
+
   function sendCity(event) {
     event.preventDefault();
     const apiKey = "1fa04c70c5487af6b7c48dd7dfcb0b3f";
@@ -29,11 +34,6 @@ export default function Weather() {
         date: response.data.dt,
       });
     }
-  }
-
-  function updateCity(event) {
-    event.preventDefault();
-    setCity(event.target.value);
   }
 
   return (

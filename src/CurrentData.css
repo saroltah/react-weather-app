@@ -6,6 +6,7 @@
 }
 .CurrentData .cityName {
   font-size: 20px;
+  margin-top: -40px;
 }
 .CurrentData .emoji {
   font-size: 20px;
@@ -15,6 +16,7 @@
 .CurrentData .description {
   font-size: 18px;
   color: #46507f;
+  margin-top: 20px;
 }
 .CurrentData .details {
   margin-top: 20px;
