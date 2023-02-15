@@ -3,7 +3,7 @@ import "./Weather.css";
 import CurrentData from "./CurrentData";
 import axios from "axios";
 import TimeDate from "./TimeDate";
-import CurrentLocation from "./CurrentLocation";
+import Forecast from "./Forecast";
 
 export default function Weather() {
   let [city, setCity] = useState();
@@ -66,6 +66,7 @@ export default function Weather() {
         wind={weatherData.wind}
         humidity={weatherData.humidity}
       />
+      <Forecast />
     </div>
   );
 }
