@@ -19,12 +19,12 @@ export default function Weather() {
     const apiKey = "1fa04c70c5487af6b7c48dd7dfcb0b3f";
     let units = "metric";
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
-
     axios.get(url).then(DisplayCityData);
 
     function DisplayCityData(response) {
       let weatherimage = response.data.weather[0].icon;
       setWeatherData({
+        coord: response.data.coord,
         cityName: response.data.name,
         icon: `http://openweathermap.org/img/wn/${weatherimage}@2x.png`,
         degree: Math.round(response.data.main.temp),
@@ -66,7 +66,7 @@ export default function Weather() {
         wind={weatherData.wind}
         humidity={weatherData.humidity}
       />
-      <Forecast />
+      <Forecast coord={weatherData.coord} />
     </div>
   );
 }
