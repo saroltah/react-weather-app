@@ -18,46 +18,15 @@ export default function Forecast(props) {
       <div className="Forecast">
         <div className="container">
           <div className="row">
-            <div className="col">
-              <ForecastDay data={forecastData[0]} />
-              <br />
-            </div>
-            <div className="col">
-              <span className="Day">Monday</span>
-              <br />
-              <span className="icon">Icon </span>
-              <br />
-              <span className="maxDegree">30° </span>{" "}
-              <span className="minDegree">0° </span>
-              <br />
-            </div>{" "}
-            <div className="col">
-              <span className="Day">Monday</span>
-              <br />
-              <span className="icon">Icon</span>
-              <br />
-              <span className="maxDegree">30°C </span>{" "}
-              <span className="minDegree">0°C </span>
-              <br />
-            </div>{" "}
-            <div className="col">
-              <span className="Day">Monday</span>
-              <br />
-              <span className="icon">Icon</span>
-              <br />
-              <span className="maxDegree">30° </span>{" "}
-              <span className="minDegree">0° </span>
-              <br />
-            </div>{" "}
-            <div className="col">
-              <span className="Day">Monday</span>
-              <br />
-              <span className="icon">Icon</span>
-              <br />
-              <span className="maxDegree">30° </span>{" "}
-              <span className="minDegree">0° </span>
-              <br />
-            </div>
+            {forecastData.map(function(dailyForecast, index) {
+              if (index < 5) {
+                return (
+                  <div className="col" key={index}>
+                    <ForecastDay data={dailyForecast} />
+                  </div>
+                );
+              }
+            })}
           </div>
         </div>
       </div>

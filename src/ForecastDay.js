@@ -1,4 +1,5 @@
 import React from "react";
+import "./ForecastDay.css";
 
 export default function ForecastDay(props) {
   function day() {
@@ -14,7 +15,7 @@ export default function ForecastDay(props) {
       <span className="Day">{day()}</span>
       <br />
       <span className="icon">
-        <img src={icon} alt="icon" />{" "}
+        <img src={icon} alt="icon" className="icon" />{" "}
       </span>
       <br />
       <span className="maxDegree">
