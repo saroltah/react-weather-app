@@ -52,14 +52,26 @@
   .CurrentData .details {
     margin-left: 25px;
   }
+  .CurrentData .basicInfo {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 620px) {
+  .CurrentData .details {
+    margin-left: 15px;
+  }
 }
 @media (max-width: 575px) {
   .CurrentData li {
-    margin-left: -20px;
+    margin-left: -40px;
   }
   .emoji {
     font-size: 5px;
     padding: 0px;
     margin-bottom: -20px;
+  }
+  .cityName {
+    font-weight: bolder;
+    font-size: large;
   }
 }

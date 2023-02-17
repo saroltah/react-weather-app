@@ -22,3 +22,8 @@
   color: #71aeba;
   text-decoration: none;
 }
+@media (max-width: 575px) {
+  .App {
+    margin: 0;
+  }
+}
