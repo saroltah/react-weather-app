@@ -10,13 +10,19 @@ export default function App() {
         <Weather defaultCity="London" />
         <footer>
           This project is created by{" "}
-          <a href="https://cool-entremet-69e2c9.netlify.app/" target="blank">
+          <a
+            href="https://cool-entremet-69e2c9.netlify.app/"
+            target="blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
             Sarolta Hegyi
           </a>{" "}
           and is open source on{" "}
           <a
             href="https://github.com/saroltah/react-weather-app"
             target="blank"
+            rel="noopener noreferrer"
           >
             GitHub
           </a>
