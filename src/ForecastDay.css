@@ -1,3 +1,8 @@
-.icon {
+.ForecastDay .icon {
   max-width: 60px;
+}
+@media (max-width: 645px) {
+  .ForecastDay .degree {
+    margin-bottom: 10px;
+  }
 }

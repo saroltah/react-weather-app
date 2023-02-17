@@ -1,6 +1,6 @@
 .App {
   margin: 50px;
-  padding: 40px;
+  padding: 60px 40px 40px 40px;
   border: 1px solid #b7d0fa;
   max-width: 700px;
   background: linear-gradient(
@@ -16,6 +16,7 @@
 }
 .App footer {
   color: #2b5555;
+  text-align: center;
 }
 .App a {
   color: #71aeba;

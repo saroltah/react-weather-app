@@ -12,10 +12,10 @@
   );
   padding: 30px 10px;
 }
-.minDegree {
+.Forecast .minDegree {
   opacity: 60%;
 }
-.Day {
+.Forecast .Day {
   font-style: italic;
   font-size: 17;
 }

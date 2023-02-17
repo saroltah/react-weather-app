@@ -14,6 +14,7 @@ export default function App() {
             href="https://cool-entremet-69e2c9.netlify.app/"
             target="blank"
             rel="noopener noreferrer"
+            title="my website"
           >
             {" "}
             Sarolta Hegyi
@@ -23,6 +24,7 @@ export default function App() {
             href="https://github.com/saroltah/react-weather-app"
             target="blank"
             rel="noopener noreferrer"
+            title="github account"
           >
             GitHub
           </a>

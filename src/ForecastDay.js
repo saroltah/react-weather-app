@@ -18,10 +18,12 @@ export default function ForecastDay(props) {
         <img src={icon} alt="icon" className="icon" />{" "}
       </span>
       <br />
-      <span className="maxDegree">
+      <span className="maxDegree degree">
         {Math.round(props.data.temp.max)}°{" "}
       </span>{" "}
-      <span className="minDegree">{Math.round(props.data.temp.min)}° </span>
+      <span className="minDegree degree">
+        {Math.round(props.data.temp.min)}°{" "}
+      </span>
     </div>
   );
 }

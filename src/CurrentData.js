@@ -21,8 +21,8 @@ export default function CurrentData(props) {
               </li>
             </ul>
           </div>
-          <div className="col-sm-6 details">
-            <ul>
+          <div className="col-sm-6">
+            <ul className="details">
               <li className="data">
                 Clouds: <span className="cloudData">{props.clouds}</span>%
               </li>

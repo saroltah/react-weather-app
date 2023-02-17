@@ -4,6 +4,9 @@
 .CurrentData li {
   list-style: none;
 }
+.CurrentData .basicInfo {
+  margin-left: 35px;
+}
 .CurrentData .cityName {
   font-size: 20px;
   margin-top: -40px;
@@ -20,6 +23,7 @@
 }
 .CurrentData .details {
   margin-top: 20px;
+  margin-left: 60px;
 }
 .CurrentData .data {
   padding-bottom: 15px;
@@ -30,6 +34,24 @@
 .CurrentData .windData {
   color: black;
   font-size: 18px;
+}
+@media (max-width: 767px) {
+  .CurrentData .details {
+    margin-left: 45px;
+  }
+  .CurrentData .basicInfo {
+    margin-left: 18px;
+  }
+}
+@media (max-width: 717px) {
+  .CurrentData .details {
+    margin-left: 35px;
+  }
+}
+@media (max-width: 667px) {
+  .CurrentData .details {
+    margin-left: 25px;
+  }
 }
 @media (max-width: 575px) {
   .CurrentData li {
