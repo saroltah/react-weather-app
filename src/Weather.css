@@ -34,9 +34,13 @@
 @media (max-width: 575px) {
   .Weather .submitButton {
     margin-bottom: 30px;
-    margin-left: 141px;
+    display: block;
+    margin: 10px auto;
   }
   .Weather {
     text-align: center;
+  }
+  .dateTime {
+    margin: 40px 0px;
   }
 }

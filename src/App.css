@@ -27,3 +27,9 @@
     margin: 0;
   }
 }
+@media (max-width: 546px) {
+  .App {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

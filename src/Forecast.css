@@ -18,4 +18,15 @@
 .Forecast .Day {
   font-style: italic;
   font-size: 17;
+  color: #230eaf;
+}
+@media (max-width: 575px) {
+  .Forecast {
+    margin: 20px 0px;
+  }
+}
+@media (max-width: 546px) {
+  .Forecast {
+    margin: 0px;
+  }
 }
