@@ -24,12 +24,11 @@ export default function Weather(props) {
     setCity(event.target.value);
   }
   function DisplayCityData(response) {
-    let weatherimage = response.data.weather[0].icon;
     setWeatherData({
       loaded: true,
       coord: response.data.coord,
       cityName: response.data.name,
-      icon: `http://openweathermap.org/img/wn/${weatherimage}@2x.png`,
+      icon: response.data.weather[0].icon,
       degree: Math.round(response.data.main.temp),
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
@@ -69,7 +68,7 @@ export default function Weather(props) {
           wind={weatherData.wind}
           humidity={weatherData.humidity}
         />
-        <Forecast coord={weatherData.coord} />
+        <Forecast coord={weatherData.coord} icon={weatherData.icon} />
       </div>
     );
   } else {

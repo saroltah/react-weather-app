@@ -5,18 +5,14 @@
   list-style: none;
 }
 .CurrentData .basicInfo {
-  margin-left: 35px;
+  text-align: center;
 }
 .CurrentData .cityName {
   font-size: 22px;
   margin-top: -40px;
   color: #f2baf1;
   font-style: italic;
-}
-
-.CurrentData .emoji {
-  font-size: 20px;
-  margin-left: -20px;
+  margin-bottom: 30px;
 }
 
 .CurrentData .description {
@@ -26,7 +22,7 @@
 }
 .CurrentData .details {
   margin-top: 20px;
-  margin-left: 60px;
+  text-align: center;
 }
 .CurrentData .data {
   padding-bottom: 15px;
@@ -38,41 +34,12 @@
   color: white;
   font-size: 18px;
 }
-@media (max-width: 767px) {
-  .CurrentData .details {
-    margin-left: 45px;
-  }
-  .CurrentData .basicInfo {
-    margin-left: 18px;
-  }
-}
-@media (max-width: 717px) {
-  .CurrentData .details {
-    margin-left: 35px;
-  }
-}
-@media (max-width: 667px) {
-  .CurrentData .details {
-    margin-left: 25px;
-  }
-  .CurrentData .basicInfo {
-    margin-left: 15px;
-  }
-}
-@media (max-width: 620px) {
-  .CurrentData .details {
-    margin-left: 15px;
-  }
-}
+
 @media (max-width: 575px) {
   .CurrentData li {
-    margin-left: -40px;
+    margin-left: -20px;
   }
-  .emoji {
-    font-size: 5px;
-    padding: 0px;
-    margin-bottom: -20px;
-  }
+
   .cityName {
     font-weight: bolder;
     font-size: large;

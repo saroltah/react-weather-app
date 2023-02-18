@@ -22,6 +22,7 @@ export default function ConvertDegree(props) {
       <div className="ConvertDegree">
         <span className="currentDegree">{props.defaultCelsius}</span>
         <span className="unit">
+          {" "}
           °C |{" "}
           <a href="/" onClick={showFahrenheit}>
             °F
