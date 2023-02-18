@@ -10,9 +10,10 @@
 .CurrentData .cityName {
   font-size: 22px;
   margin-top: -40px;
-  color: #230eaf;
+  color: #f2baf1;
   font-style: italic;
 }
+
 .CurrentData .emoji {
   font-size: 20px;
   margin-left: -20px;
@@ -20,7 +21,7 @@
 
 .CurrentData .description {
   font-size: 18px;
-  color: #048c67;
+  color: #8dc9c2;
   margin-top: 20px;
 }
 .CurrentData .details {
@@ -29,12 +30,12 @@
 }
 .CurrentData .data {
   padding-bottom: 15px;
-  color: #46507f;
+  color: #a588f7;
 }
 .CurrentData .cloudData,
 .CurrentData .humidData,
 .CurrentData .windData {
-  color: black;
+  color: white;
   font-size: 18px;
 }
 @media (max-width: 767px) {
