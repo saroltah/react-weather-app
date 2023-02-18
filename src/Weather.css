@@ -5,6 +5,7 @@
 .Weather .placeholder {
   background-color: white;
   border: 1px solid #b7d0fa;
+  box-shadow: 10px 10px 50px 10px rgba(14, 97, 240, 0.3);
 }
 .Weather .placeholder:hover {
   cursor: auto;
