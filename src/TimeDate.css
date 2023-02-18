@@ -1,8 +1,3 @@
-.TimeDate.updated {
+.updated {
   color: #71aeba;
-}
-@media (max-width: 576px) {
-  .updated {
-    color: #71aeba;
-  }
 }
