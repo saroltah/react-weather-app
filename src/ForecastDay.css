@@ -1,6 +1,9 @@
 .ForecastDay .icon {
   max-width: 60px;
 }
+.minDegree {
+  color: #a588f7;
+}
 @media (max-width: 645px) {
   .ForecastDay .degree {
     margin-bottom: 10px;
