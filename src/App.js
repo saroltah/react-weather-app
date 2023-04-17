@@ -11,7 +11,7 @@ export default function App() {
         <footer>
           This project is created by{" "}
           <a
-            href="https://cool-entremet-69e2c9.netlify.app/"
+            href="https://portfolio-sarolta-hegyi.netlify.app/"
             target="blank"
             rel="noopener noreferrer"
             title="my website"
