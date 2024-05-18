@@ -11,11 +11,10 @@ export default function App() {
         <footer>
           This project is created by{" "}
           <a
-            href="https://portfolio-sarolta-hegyi.netlify.app/"
+            href="https://saroltah.github.io/portfolio-2024/projects.html"
             target="blank"
             rel="noopener noreferrer"
-            title="my website"
-          >
+            title="my website">
             {" "}
             Sarolta Hegyi
           </a>{" "}
@@ -24,8 +23,7 @@ export default function App() {
             href="https://github.com/saroltah/react-weather-app"
             target="blank"
             rel="noopener noreferrer"
-            title="github account"
-          >
+            title="github account">
             GitHub
           </a>
           .
