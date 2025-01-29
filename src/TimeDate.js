@@ -1,5 +1,5 @@
 import React from "react";
-import "./TimeDate.css";
+import "./style/TimeDate.css";
 
 export default function weatherData(props) {
   let currentDate = new Date(props.date * 1000);

@@ -1,5 +1,5 @@
 import React from "react";
-import "./CurrentData.css";
+import "./style/CurrentData.css";
 import ConvertDegree from "./ConvertDegree";
 import WeatherIcon from "./WeatherIcon";
 

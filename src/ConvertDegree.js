@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./ConvertDegree.css";
+import "./style/ConvertDegree.css";
 
 export default function ConvertDegree(props) {
   const [unit, setUnit] = useState("celsius");

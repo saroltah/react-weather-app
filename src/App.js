@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./App.css";
+import "./style/App.css";
 import Weather from "./Weather";
 
 export default function App() {
@@ -14,7 +14,8 @@ export default function App() {
             href="https://saroltah.github.io/portfolio-saroltah/projects.html "
             target="blank"
             rel="noopener noreferrer"
-            title="my website">
+            title="my website"
+          >
             {" "}
             Sarolta Hegyi
           </a>{" "}
@@ -23,7 +24,8 @@ export default function App() {
             href="https://github.com/saroltah/react-weather-app"
             target="blank"
             rel="noopener noreferrer"
-            title="github account">
+            title="github account"
+          >
             GitHub
           </a>
           .
