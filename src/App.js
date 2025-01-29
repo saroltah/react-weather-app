@@ -11,7 +11,7 @@ export default function App() {
         <footer>
           This project is created by{" "}
           <a
-            href="https://saroltah.github.io/portfolio-2024/projects.html"
+            href="https://saroltah.github.io/portfolio-saroltah/projects.html "
             target="blank"
             rel="noopener noreferrer"
             title="my website">
